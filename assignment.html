@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat Gallery</title>
+<script type="text/javascript" src="assignment.js"></script>
+<link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+
+    <section class="gridWrapper">
+        <aside class="imageDisplay">
+            <img class="image-large" id="big-display-1">
+            <div class="thumbnails">
+                <!--Skapar cusom-data attribut som vi sedan kan referera till i javascript genom .dataset-propertien för att komma åt src till img-big-->
+                <img src="imgs/img1.jpg" data-bigimgsrc="img1_big.jpg">
+                <img src="imgs/img2.jpg" data-bigimgsrc="img2_big.jpg">
+                <img src="imgs/img3.jpg" data-bigimgsrc="img3_big.jpg">
+                <img src="imgs/img4.jpg" data-bigimgsrc="img4_big.jpg">
+            </div>
+        </aside>
+
+        <aside class="infobar">
+            <div class="about">
+                <h3> About these Kittehns</h3>
+                <p>Get my claw stuck in the dog's ear destroy house in 5 
+                seconds catasstrophe and lie in the sink all day drink water 
+                out of the faucet drink water out of the faucet. Stand in 
+                front of the computer screen cats secretly make all the worlds 
+                muffins cats making all the muffins so all of a sudden cat goes 
+                crazy need to chase tail weigh eight pounds but take up a full-size 
+                bed yet meow for food, have secret plans bad kitty. Kitty scratches couch, bad, bad kitty. </p>
+            </div>
+            <button type="button" onclick="alert('I love kittens!!')">Click here if you a hooman who löves kittehnszz</button>
+        </aside>
+    </section>
+
+    <section id="overlay">
+        <img class="overlay-image">
+        <button id="prevImg"> < </button>
+        <button id="nextImg"> > </button>
+    </section>
+
+
+</body>
+</html>

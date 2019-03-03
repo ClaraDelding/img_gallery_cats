@@ -1,0 +1,144 @@
+body {
+    margin: 20px;
+    padding: 20px;
+}
+
+.gridWrapper {
+    display: grid;
+    grid-gap: 5px;
+    display: grid;
+}
+
+
+.imageDisplay {
+    max-width: 760px;
+    border: 2px solid black;
+    background-color: white;
+    grid-column: 1 / 2 ;
+    grid-row: 1;
+    margin: auto;
+    
+}
+
+.ImageDisplay .image-large, #big-display-1 {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.thumbnails img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.infobar {
+    max-width: 700px;
+    margin-top: 50px;
+    margin-left: 60px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: auto;
+}
+
+.infobar p {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: grid;
+}
+
+.infobar .about {
+    border: 2px solid black;
+}
+
+.infobar .about h3 {
+    padding-left: 33%;
+}
+
+.infobar button {
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+ 
+#overlay {
+    position: relative;
+    border: 2px solid white;
+    background-color: rgba(255,0,0,0.3);
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+#overlay.visible {
+    display: block;
+}
+
+#overlay .overlay-image {
+    width: 55%;
+    height: auto;
+    border: 2px solid #000;
+    margin: 100px auto;
+    display: block;
+} 
+
+#prevImg {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: auto;
+    height: auto;
+    margin-top: -23px;
+}
+
+#nextImg {
+    position: absolute;
+    float: right;
+    top: 30%;
+    right: 10%;
+    width: auto;
+    height: auto;
+    margin-top: -23px;
+}
+
+.initial_border {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #4F4F4F;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .thumbnails {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+
+}
+
